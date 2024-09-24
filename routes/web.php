@@ -47,3 +47,4 @@ Route::get('/restricted', function()
 {
     return "You have access to this page !!" ;
 })->middleware('verif.age');
+Route::resource('product', \App\Http\Controllers\ProductController::class) ;
